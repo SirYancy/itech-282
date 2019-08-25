@@ -18,8 +18,8 @@ email: eric.kuha@lltc.edu
 description: >- # this means to ignore newlines until "baseurl:"
     This is a site for course materials for ITECH-282, CompTia A+ 
     Certification Hardware Core.
-baseurl: "/" # the subpath of your site, e.g. /blog
-url: "https://siryancy.github.io/itech-282/" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/itech-282" # the subpath of your site, e.g. /blog
+url: "https://siryancy.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  SirYancy
 
 # Build settings
