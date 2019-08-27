@@ -7,3 +7,15 @@ title: Home
 ---
 
 Lecture Notes for ITECH 282
+===========================
+
+## Day 1 
+
+<form>
+<input type="checkbox">Test Dates<br>
+<input type="checkbox">Test Fees<br>
+<input type="checkbox">Overview of Course</br>
+<input type="checkbox">Syllabus</br>
+
+</form>
+
