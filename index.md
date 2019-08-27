@@ -14,8 +14,8 @@ Lecture Notes for ITECH 282
 <form>
 <input type="checkbox">Test Dates<br>
 <input type="checkbox">Test Fees<br>
-<input type="checkbox">Overview of Course</br>
-<input type="checkbox">Syllabus</br>
+<input type="checkbox">Overview of Course<br>
+<input type="checkbox">Syllabus<br>
 
 </form>
 
