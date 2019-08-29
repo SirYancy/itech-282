@@ -57,3 +57,39 @@ permalink: /chapter-3
     * {: .label .label-yellow}Note: 
         * CPUs with the same architecture are often marketed with different speeds. Why?
     * Image of crystal in the textbook.
+* EDB
+    * Example program
+* Memory
+    * What is memory?
+    * What is its purpose?
+    * Why can't we just use the hard drive?
+    * Example program
+    * Random Access Memory (Chapter 4)
+        * Think of it like a spreadsheet
+        * Each cell can store a bit
+        * Each row is 8 bits across (to match the bus in the 8088)
+        * 4 bits = nibble
+        * 8 bits = a bytes
+        * 16 bits = a word
+        * 32 bits = a double word
+        * 64 bits = a paragraph or quad word
+    * Why is it Random Access?
+        * It can access any line of data as fast as any other line of data
+    * We use DRAM (*Dynamic RAM*)
+        * It needs a constant electrical charge and a periodic refresh of the circuits or it loses all data.
+        * The refresh takes time away from processing, however.
+        * This is not permanent storage.
+* Address Bus
+    * How do the CPU and the RAM talk to each other?
+    * The EDB extends from the CPU to the RAM.
+    * How does this work to access any memory on the RAM chip?
+    * Something like a *memory controller chip*.
+    * Address Bus is another set of wires connected to the MCC.
+        * The 8088 had 20 wires in the address bus.
+        * How many locations can this address?
+        * How do you decide which numbers address which locations in RAM?
+        * Address space of the 8088 is 1,048,576
+        * There's another word for this number. Megabyte
+        * This was way more than it needed. Maybe they only had a few thousand actual memory locations.
+        * In reality, 
+    * 
