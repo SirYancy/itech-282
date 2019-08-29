@@ -91,5 +91,4 @@ permalink: /chapter-3
         * Address space of the 8088 is 1,048,576
         * There's another word for this number. Megabyte
         * This was way more than it needed. Maybe they only had a few thousand actual memory locations.
-        * In reality, 
     * 
