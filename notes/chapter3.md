@@ -192,3 +192,29 @@ Security
 * AMD: Enhanced Virus Protection
 * ARM: XN (eXecute Never)
 * It's a bit that, when turned on, makes it impossible at a hardware level to execute code at certain memory locations.
+
+
+## Selecting and Installing CPUs
+
+* You don't necessarily need to know about all of the sockets. However, it is a good idea to be aware of them and that they are different from brand to brand and CPU to CPU.
+* Intel Core i7 8650 U
+    * Intel COre = brand
+    * i7 = brand modifier
+    * 8 = generation
+    * 650 = SKU numbers
+    * U = alpha suffix (ultra low power in this case)
+* AMD Ryzen 7 2700X
+    * AMD Ryzen = Brand
+    * 7 = market segment
+    * 2 = generation
+    * 7 performance level
+    * 00 = model number
+    * X = power suffix (x is high performance)
+
+### Installation issues
+
+* Socket types
+    * Pin Grid Array
+    * Land Grid Array
+* Demo socket installation
+    * (zero insertion force) ZIF socket
