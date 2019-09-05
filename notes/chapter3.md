@@ -214,7 +214,51 @@ Security
 ### Installation issues
 
 * Socket types
-    * Pin Grid Array
-    * Land Grid Array
+    * Pin Grid Array (primarily AMD)
+    * Land Grid Array (Intel and some AMD processors)
 * Demo socket installation
     * (zero insertion force) ZIF socket
+
+### Cooling
+
+* Why do we need cooling?
+* Passive cooling vs Active Cooling
+* OEM coolers vs specialized coolers
+* Liquid cooling systems
+    * Hollow metal block that sits on CPU
+    * A pump
+    * A device to cool the liquid.
+* "fanless" cooling
+* Installation:
+    * Locate the fan standout
+    * Orient the fan assembly so it can reach the connector
+    * Apply thermal paste (if needed)
+    * [Demo](https://www.youtube.com/watch?v=JYwHB2P6GmM)
+    * Secure the Heat Sink
+    * Plug in the fan
+
+### Overclocking
+
+Overclocking
+: Intentionally running the system clock at higher speeds than the CPU is rated for.
+
+* Potential pitfalls of overclocking
+* CPU manufacturers do not encourage this process (why?)
+* However, they do offer utilities to help sort this out.
+* What are the tools and service plans available?
+* First, you increase the bus speed of the system (jumpers, CMOS settings, software configs)
+* Second, You need to increase the voltage of the CPU to provide stability. (CMOS setting or jumper)
+* Be careful when changing CMOS settings
+
+### CPU troubleshooting
+
+* Installing incorrectly
+    * Results in nothing
+    * or system lockup in a short period of time.
+    * Almost always an issue with the heat-sink and fan assembly.
+* What's the problem?
+    1. Too much thermal paste
+    1. Too little thermal paste
+    1. forgot to connect the power to the fan.
+
+
