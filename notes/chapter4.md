@@ -87,7 +87,7 @@ Chapter 4 - RAM
 
 ## DDR SDRAM
 
-This is on the test{: .label .label-yellow }
+{: .label .label-yellow }This is on the test
 
 * The alternative to RDRAM: *Double Data Rate SDRAM*
 * They copied Rambus, making two processes for every clock cycle.
