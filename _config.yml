@@ -30,6 +30,8 @@ plugins:
   - jekyll-remote-theme
 
 remote_theme: pmarsceill/just-the-docs
+color_scheme: "dark"
+footer_content: "Copyright &copy; 2019 Eric Kuha. Distributed by an <a href=\"https://github.com/SirYancy/itech-282/blob/master/LICENSE">MIT license.</a>"
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

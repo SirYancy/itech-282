@@ -29,3 +29,7 @@ Lecture Notes for ITECH 282
 ## Day 4 - 9-5-2019
 
 * Finish Chapter 3 - CPUs
+
+## Day 5 - 9-9-2019
+
+* Chapter 4 - RAM
