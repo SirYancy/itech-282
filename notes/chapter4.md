@@ -87,8 +87,7 @@ Chapter 4 - RAM
 
 ## DDR SDRAM
 
-{: .label .label-yellow}This is on the test
-
+* {: .label .label-yellow}This is on the test
 * The alternative to RDRAM: *Double Data Rate SDRAM*
 * They copied Rambus, making two processes for every clock cycle.
 * AMD at the time was using a double clocked frontside-bus, so this worked nicely.
