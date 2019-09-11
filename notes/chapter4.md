@@ -155,4 +155,85 @@ etc...
     * megatransfers per second (MT/s)
 * Chart in book
 * Mention what is actually on the exam.
-* My computer in my office has 1066 MHz DDR4 RAM
+* My office computer CPU-Z output:
+
+![CPU-Z output](images/chapter4/cpuz-ram.png)
+
+## Double-Sided DIMMs
+
+* Big thing here is to pay attention to documentation and compatibility
+
+## Latency
+
+* column array strobe latency. (CAS)
+* All other things being equal, a lower delay means faster ram. CL17 is faster than CL19
+* Number refers to number of clock cycles for RAM to access memory location.
+* Latency is tied to clock (since it's measured in ticks). High latency doesn't necessarily mean slow RAM if the clock speed is high enough.
+* Compatibility: Get the quickest RAM your system can handle.
+
+## Parity and ECC
+
+* Occasionally, there are mistakes. Strange quantum effects. Electrical hiccups. Whatever they are, sometimes bits are flipped.
+* Most of the time, you never even notice it.
+* But there are systems that *need* flawless execution.
+* Fault-resistant RAM
+    * Parity RAM
+        * Has an extra bit that could tell you if there was an error. (even or odd)
+        * Only option for some time
+        * Could not correct errors
+        * Sometimes it had false positives or false negatives.
+    * ECC (Error Correction Code)
+        * Can detect and correct any single-bit error.
+        * Can detect but not correct 2+ bit errors.
+        * ECC RAM is slower than non-ECC RAM.
+
+## Registered and Buffered Memory
+
+* Sometimes, RAM will have a little buffer or register on the RAM chips which can speed things up by giving the RAM a staging ground for dtata find bid.
+* Just remember, that some systems require buffered and other systems require unbufferred. Few can accommodate both.
+
+## Do you need RAM?
+
+* Single best thing you can do to increase system performance.
+* Two things indicate more RAM needed
+    * Excessive sluggish performance
+    * Excessive HDD accessing.
+* It's the easiest thing to upgrade and can breathe new life into an older system.
+
+### Virtual Memory
+
+* Solution to problem of finite RAM
+* Use the HDD/SSD to supplement RAM
+* Called a *page file* or a *swap file*
+* What's Virtual memory for?
+* Windows recommends 1.5x the installed RAM.
+* Follow example in the text.
+* All of this is automatic and completely transparent to the user.
+* What happens when you click on an app that has been written out to Virtual Memory?
+* These processes do take time however.
+* It slows the machine down.
+* New apps load slower
+* If windows accesses page file too frequently, you have *thrashing*
+    * Using the page file is not the problem (it happens all the time)
+    * Excessively using it is the problem.
+
+## RAM Recommendations
+
+![Windows Minimum Requirements](images/chapter4/min-req.png)
+
+* More reasonable:
+    * 32-bit Windows 2GB to get by, 4 GB is better
+    * 64-bit Windows 4 to get by, 8 for better, 16+ for serioues intensive work (video editing or whater)
+* macOS likes at least 2 GB of RAM, but 8+ or more is always better
+* Text has a warning about sealed systems
+* Linux is a different story. Depends on Distro. Ubuntu is comparable to Windows/macOS
+
+### How much RAM do I have?
+
+* Windows-Pause, Super-pause
+* Ctrl-Shift-Esc
+* Mention Ready-Boost
+
+### Getting the right RAM
+
+
