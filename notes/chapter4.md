@@ -236,4 +236,43 @@ etc...
 
 ### Getting the right RAM
 
+* An important place to look for RAM compatibility is the motherboard manual.
+* The motherboard manufacturer's website also will have compatibility information.
+* {Gigabyte Gaming 7}(https://www.gigabyte.com/Motherboard/GA-Z170X-Gaming-5-rev-10#ov)
+* Also [PC Part Picker](https://pcpartpicker.com/)
 
+### Mix and Match
+
+* Generally speaking, capacities can mix and match okay.
+* However, stability is enhanced by matching, as clost as possible, technology, capacity, speed, and latency.
+
+### Mixing Speeds
+
+* Disclaimer about speeds (text 159)
+* That said, there is some flexibility regarding speed mixing.
+* You can use RAM that is faster than the system allows, but it won't speed up your system.
+* Mix and match in separate banks as long as all speeds are the same or faster than the specification
+* Don't put different speeds in banks that use dual-channel DDR.
+
+### Installing RAM
+
+* Demo
+
+### Troubleshooting
+
+* System lockups and page faults
+* Page faults sometimes have a memory address. Write it down. If you get another one with the same address, it might be a bad RAM stick.
+* *non-maskable interrupt (NMI)*
+    * Usually results in *proprietary crash screen* (BSOD)
+* There are other things that can cause memory errors that are not necessarily bad RAM
+    * failing power supply
+    * electrical interference
+    * buggy apps
+    * buggy hardware,
+    * etc
+* A couple ways to test RAM
+    * There are hardware solutions
+    * Also "replace and pray"
+    * There's also a software tester.
+    * *Windows Memory Diagnostic tool
+    * [Memtest86+](http://memtest.org)
