@@ -171,4 +171,58 @@ Chapter 5 - Firmware
 
 ## Care and feeding of BIOS/UEFI and CMOS
 
-* 
+* Messing around with CMOS settings is where a lot of problems can start.
+* Only make as many changes as you can remember. Document everything.
+* Don't make  any changes unless you know what they do
+
+### Default/Optimized Settings
+
+* Reset options in CMOS.
+* They keep you from having to memorize a lot of weird stuff
+* Default settings are  fail safe, very simple set.
+* Optimized settings are theoretically, best possible speed/stability for the system
+
+### Clearing CMOST RTC RAM
+
+* If you mess things up, even badly (so the system is essentially dead)
+* Almost every mobo has a set of wires called CLRTC
+* Procedure:
+    * Turn off and unplug the computer
+    * Find the clear wires
+    * Move the shunt (jumper) from wires 1 and 2 to wires 2 and 3.
+    * Wait for 10 seconds
+    * Move the shunt back
+    * Plug in and boot the system.
+* If that doesn't work (or if no CLRTC), you may have to just pop the battery out.
+
+## Losing CMOS RTC Settings
+
+* Typically, systems use a CR2032 battery (3v lithium coin battery)
+* If something goes wrong, the system might give errors or not boot
+* Generally, low probability of not booting but...
+* Possible errors that might come up:
+    * CMOS configuration mismatch
+    * CMOS date/time not set
+    * BIOS time and settings reset
+    * No boot device available
+    * CMOS battery state low
+* Reasons for losing settings?
+    * Pulling and inserting cards
+    * Touching the motherboard
+    * Dropping something on the motherboard
+    * Dirt on the motherboard
+    * faulty power supply
+    * electrical surges
+* If the system clock keeps going back to January 1, it's a good sign that the battery needs to be replaced
+* To preserve settings, you can leave the system plugged in, but *be very careful about ESD if you do this*.
+
+## Flashing the ROM
+
+* Firmware updates (exam terminology)
+* "flashing the BIOS"
+* This can add support for new technology
+* Typically, you download the update file from the manufacturer website
+* Stick it in a USB drive
+* Boot into CMOS settings
+* Run the BIOS update utility.
+*
