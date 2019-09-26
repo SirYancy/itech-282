@@ -168,3 +168,42 @@ Chapter 6 - Motherboards
     * PCIe 4.x gets 16 GTps
 * Each p2p connection can use 1,2,4,8,12, or 16 lanes. Up to 256 GTps.
 * *transfer rate* describes number ops happening per second
+* Depending on how it's encoded, you can lose some effective data rate because it has to be decoded and reassembled at the other end.
+* Still, duplex communication on x16 can be 32 GBps
+* Most common is the PCIe x16 slot. Typically for graphics cards. And not really much else need that much throughput.
+* Also common are x1 and x4 PCIe slots
+
+## Installing Expansion Cards
+
+Four main steps
+
+1. *Knowledge* - Know what you are installing. Compatibility. OS. Drivers. For new versions of Windows, the answer is usually yes. But for older hardware or uncommon OS, this is not a guarantee.
+1. *Physical Installation* - Two places: In a computer or an anti-static bag. Hold only by the edges. Don't touch the pins. Don't touch any of the components. Use anti-static wristband or at least ground yourself after removing it from the bag. Since the mobo always has a trickle of power, *always unplug the computer*. Lock it in with a screw or other mechanism. Some cards actually use this screw connection to ground it. If you *have* to clean the pins, use a can of air. There's also electronic cleaning solution. If the motherboard is seated correctly, the card should sit in the case very nicely.
+1. *Device Drivers* - Installed automatically by the OS. Occasionally, an optical disc. It's usually fairly straightforward, or automatic. But it is possible to make mistakes.
+1. *Verify* - Check if it works as intended.
+
+* Usually, you'll find more recent drivers on the manufacturer's website.
+* Usually, you have to install the device first, and then install drivers or you'll have errors
+    * Except for some USB devices where you want the driver first. (not always)
+* Sometimes you have to remove old drivers before you install the new device. Locate in the Device Manager.
+* It is possible to get unsigned drivers
+* Driver rollback is also a thing.
+
+# Troubleshooting Expansion Cards
+
+* Botched installations are the main cause of problems here.
+* If the device doesn't work: Reinstall (after checking the device manager)
+* If it doesn't show up in the device manager, check that it's installed properly and has power.
+* `hdwwiz.exe`
+* At this point if it still doesn't work, the device might be damaged.
+* Or it's turned off in CMOS.
+* Black ! in device manager.
+    * Check it's installed correctly
+    * Try the **Update Driver** button.
+* Black downard pointing arrow.
+    * Device is manually disabled or damaged.
+    * Check if it's disabled.
+    * Try rolling back the driver
+    * Or Uninstall
+* If none of this works, the card is probably bad.
+*
