@@ -206,4 +206,55 @@ Four main steps
     * Try rolling back the driver
     * Or Uninstall
 * If none of this works, the card is probably bad.
-*
+
+# Upgrading and Installing MOtherboards
+
+* First decide AMD or Intel
+* Then Form Factor
+* Then features and easy of configuration
+* Then actually select the case
+* Step By Step
+    1. What motherboard do you need?
+        * CPU?
+        * How much RAM are you going to have?
+        * Not a bad idea to get to know some of the names of popular manufacturers.
+    1. Get the form factor that works with your case
+    1. Read the motherboard book.
+    1. Pick your case carefully. 
+        * Lots of different sizes.
+        * slimline, desktop, minitower, mid-tower, cube.
+        * Also specialized cases
+        * Sometimes they come with PSUs.
+        * Verify wattage
+* Installing the motherboard
+    * Remove all of the cards.
+    * Remove anything else that might impede removal or installing of mobo. HDDs etc
+    * Keep track of screws
+    * Unscrew the motherboard.
+    * Remove the old motherboard.
+    * Verify that all the correct standoffs for the new mobo are there.
+    * Next: connect the LEDs, buttons, front mounted ports. (sometimes easier before you install in the case)
+        * soft power button
+        * reset button
+        * speaker
+        * hard drive activity light
+        * power light
+        * usb
+        * sound
+        * thunderbolt
+    * Make sure you watch +- connections with these as lights are LEDs.
+        * Don't worry, you can't break anything though.
+        * Only the power button is absolutely necessary
+    * Now, Install new mobo
+    * Install CPU and RAM
+    * Connect power to everything
+    * See if it POSTs.
+* If it doesn't POST.
+    * If you get no power, check to make sure you plugged in all power connectors
+    * If you get fans but nothing on the screen
+        * CPU, RAM, or Video Card
+        * Just test
+
+# Troubleshooting Mobos
+
+* 
