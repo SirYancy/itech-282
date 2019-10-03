@@ -137,6 +137,39 @@ Relationship: $V \times A = W$
 * You can get splitters to create more connections
 * There are also Molex to SATA adapters and vice versa
 
-#### ATX
+### ATX
 
-* 
+* Two main distinguishing features:
+    * Motherboard power connector
+        * 20-pin PI connector
+        * At least 2 other connectors with 2 or more Molex or Mini connectors
+    * soft power
+        * At all times, ATX hav 5V running to Mobo. Always "on"
+        * The button isn't *really* a power switch.
+        * It just sends a signal. This is "soft" power
+* Two main reasons for soft power
+    * Prevents people from turning off the computer before it's done shutting down.
+    * Enables things like power-saving mode and sleep states
+    * CMOS settings have more.
+* Let's look at updates that have happened to ATX power
+
+#### ATX12V 1.3
+
+* 2003
+* Introduced a 4-pin power connector called *P4*. Adds more 12V power.
+* Also introduced the 6-pin auxiliary connector *AUX* to supply extra 3.3 and 5V.
+* There were problems. Bad enforcement of standard meant you had to be very careful to buy the right PSU.
+
+#### EPS12V
+
+* Mostly for servers. Had  lots of additional connectors and made some interesting advances.
+* Main contriubted thing was the concept of *rails*
+
+#### Rails
+
+* All power comes from a transformer that converts AC to DC and splits it between primary DC voltage rails
+* Each rail has a maximum amount of power it can supply.
+* Usually, this is not a big deal, but big PCs sometimes need more power
+* So they started adding multiple rails.
+* They had a tough time balancing current between rails until about 2008
+* Today, 
