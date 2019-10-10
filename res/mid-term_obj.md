@@ -26,3 +26,13 @@ This is also all fair game.
 ### 3.7 Power Supplies
 
 Everything here might be on the exam. Pay attention to the possible voltage typo.
+
+## 5.0 Hardware and Network Troubleshooting
+
+### 5.1 Basic Problem-solving workflow
+
+Have a good idea of the basic steps to identify and troubleshoot issues.
+
+### 5.2 Troubleshoot motherboards, RAM, CPUs, power
+
+Pretty much everything here is fair game.
