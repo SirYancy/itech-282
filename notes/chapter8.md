@@ -137,4 +137,70 @@ The importance of these varies depending on need.
 
 ## Connecting Mass Storage
 
+* Need for standardized connections between CPU and mass storage.
+* Must provide security and speed
+* Also need for a standardized protocol/language/encoding scheme
+* Standards organization: *Storage Networking Industry Association*: *Small Form Factor Committee* (SFF)
+* Most important standard for us: *ATA/ATAPI*.
+* *ATA* advanced technology attachment
+* Dates back to 1990
+* There are two versions of this standard that are of interest to us:
+    * PATA Parallel ATA (ATA/ATAPI version 1)
+    * SATA Serial ATA (ATA/ATAPI version 7)
+
+### PATA
+
+* PATA drives use a 40 pin connection ribbon Called *IDE*
+* Powered by a molex connector
+* A few notes on PATA standard
+    * Standard supported 144 PB drives
+    * 133 megabytes/s
+    * A single cable could connect two drives (master/slave)
+* Between version 1 and 7, there are lots of changes, but the only really important one is SMART
+    * From version 3
+    * *Self-Monitoring, Analysis, and Reporting Technology*
+    * SMART software can give you a baseline of drive functionality.
+
+### SATA
+
+* Problems with PATA
+    * Ribbons impede airflow
+    * Are a pain to insert properly
+    * Limited to 18 inches in length
+    * No hot swapping
+    * It had reached the limits of its throughput capabilities.
+    * Time for a change
+* SATA creates a point to point connection between device and SATA controller, called the *host bus adapter* (HBA)
+* Power and data connectors are very different
+* SATA needs fewer wires (7 vs 40)
+* Better airflow, better cable control, cooler PC
+* Max SATA length is about 40 inches
+* Easier to install drives in larger cases.
+* No limit to number of drives. Only limited by ports.
+* Want more ports? Add a HBA controller
+* Serial connection is theoretically up to 30 times faster than parallel connection.
+    * 1.5 Gbps (150 MBps)
+    * 3 Gbps (300 MBps)
+    * 6 Gbps (600 MBps)
+    * Note number discrepancies
+* eSATA ports operate at the same revision and speed as internal SATA ports.
+* Hot swapping
+* SATA Express (SATAe) ties straight into PCIe bus
+    * 1 lane can give 8 Gbps
+    * 2? 2000 MBps
+    * SATAe port in text
+    * Backwards compatibility
+* See exam tip
+
+### eSATA etc
+
+* eSATA ports are keyed differently, but look similar
+    * cable lengths up to 2 meters
+    * Slightly faster than USB (when it was first introduced)
+    * USB 3.0 has obsoleted it though
+    * External drives today use USB 3.0, 3.1, or C)
+* Know cable lengths
+
+## Refining Mass Storage Communication
+
 * 
