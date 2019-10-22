@@ -203,4 +203,62 @@ The importance of these varies depending on need.
 
 ## Refining Mass Storage Communication
 
-* 
+Three main command sets for hard drives
+
+* AHCI
+* NVMe
+* SCSI
+
+### AHCI
+
+* *Advanced Host Controller*
+* Unlocks hot swapping and native command queuing
+* *(NCQ)* disk optimization feature. Gives faster read and write speeds.
+* Of course, in order to support hot-swapping, both mobo and OS must support it.
+* AHCI must be enabled in CMOS prior to installing an OS.
+
+### NVMe
+
+* AHCI is specifically designed for spinning SATA drives
+* It also works for SSDs (Windows can't tell the difference anyway)
+* But it's not optimal. There is circuitry in the SATA SSD that convinces windows it's a traditional HDD
+* There's a virtual drive mapped onto the actual guts of the SSD
+* *Non-Volatile Memory Express* (NVMe) supports communication between the OS and SSD via a PCIe lane.
+* Most commonly M.2 format.
+* They use SATAe.
+
+###SCSI
+
+* *Small computer system interface* rules the server market.
+* Has evolved from parallel to wider parallel to a super fast serial interface.
+* SCSI devices uses a standard command set. Both older and newer SCSI devices can communicate
+* They have used a variety of ribbon cables
+* *Serial Attached SCSI (SAS)* provide fast and robust storage to servers and storage arrays.
+* SAS-3 provides 12 Gbps.
+* SAS controllers also support SATA devices.
+* A+ includes SCSI, but only SAS. And not in great detail.
+
+## RAID
+
+* "Most expensive part of a PC?"
+* Text mentions small businesses that went out of business because of a hard drive failure.
+* Data is the reason for the computer.
+* How do you protect it?
+* Backups are a start
+* Process of restoring?
+* What if you don't have time for that.
+* What if you could lose a drive but still keep working?
+* *Option 1: Disk mirroring*
+    * *Disk duplexing* - two RAID controllers, two separate drives
+* Even though duplexing is faster than mirroring, both are slower than a single HDD So...
+* *Option 2: Disk striping* 
+    * spreading data among multiple hard drives (at least 2)
+    * half of data goes on one drive. Half on another
+    * Doesn't actually provide redundancy
+    * Is very fast
+    * If either drive fails, all data is lost
+    * Don't do this.
+* *Option 3: Disk striping with parity*
+    * adds extra parity data that can be used to rebuild data after a fail.
+    * Requires at least 3 drives
+    * A majority of network servers use some type of disk striping with parity.
