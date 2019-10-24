@@ -262,3 +262,43 @@ Three main command sets for hard drives
     * adds extra parity data that can be used to rebuild data after a fail.
     * Requires at least 3 drives
     * A majority of network servers use some type of disk striping with parity.
+
+### Implementing RAID
+
+* There's no one way to create a RAID array.
+* You're just taking a bunch of hard drives and connecting them together.
+* Some solutions are pre-packaged boxes.
+* Others are custom designed and built from scratch.
+
+### Software vs Hardware
+
+* Either software or Hardware methods
+* Software 
+    * Cheaper
+    * Worse performance
+    * No need for special controllers
+    * Plain old SATA works
+    * Need  "smart" software
+    * Windows Server has built-in RAID software.
+        * 0, 1, 5 are supported.
+        * Works for both PATA and SATA
+    * Windows 7,8,8.1,10 can do 0 and 1
+    * third party software solutions exist and are compatible with Windows.
+    * Of course, this all comes at a penalty of putting OS in charge of managing the RAID array.
+* Hardware performs better, but is more expensive.
+    * More expensive
+    * Faster performance
+    * Hardware RAID uses *intelligent* controllers.
+    * These controllers have their own processor and memory so they handle all of the details of setting up and maintaining the RAID array.
+    * Most real world setups are hardware-based.
+    * Almost all support hot-swapping
+    * Invisible to the OS
+    * Most can be configured in a Flash ROM accessed after CMOS but before OS
+
+### Dedicated RAID boxes
+
+* Connect usually USB, Thunderbolt (or Firewire or eSATA on older systems)
+
+# Installation
+
+* [Installing M.2](https://youtu.be/NCIqZjo34rw)
