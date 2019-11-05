@@ -242,3 +242,19 @@ Chapter 10 - Essential Peripherals
             * analog/digital out
             * microphone
             * Also might have *Sony/Philips Digital Interface (S/PDIF)* Connects directly into a 5.1 system
+    * Storage Devices
+        * Secure Digital
+            * mini and micro.
+            * 3 storage capacities. 
+                * Standard store 4 MB to 4 GB
+                * SDHC store 4GB to 32GB
+                * SDXC store 32GB to 2 TB.
+            * Speed
+                * 1st generation uses speed class (2,4,6,10). Class 10 writes at 10 MB/s
+                * 2nd generation V6-V90
+                * 3rd generation *Application Performance Class* A1 and A2. Not fast throughput, but support high IOPS which are great for smartphones.
+        * Optical Media
+            * CDDA (CD Digital Audio). Great for storing music, but not great for file storage.
+            * So then they come up with CD-ROM
+            * CDFS or ISO-9660
+            *
