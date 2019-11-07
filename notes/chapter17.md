@@ -106,3 +106,59 @@ Display Adapter
     * Refresh Rate
     * Contrast Ratio
     * Color Depth.
+* **Resolution**
+    * Resolution is number of pixels on the display.
+    * Number of pixels up x number down.
+    * LCDs are designed to run at a single *native resolution*.
+    * It cannot run at any higher res
+    * And running at lower res degrades image quality
+        * They use a technique called *interpolation* to soften edges of pixels.
+    * Always set at native res.
+    * These resolutions have names. *video modes*.
+    * 640x480 *(VGA)* - The only one that's actually on the exam.
+    * 1366x768 *(WXGA)*
+    * 1920x1080 are called *FHD* or *1080p*.
+    * *aspect ratio*.
+        * 16:9 is a typical widescreen aspect ratio
+        * Video might like 21:9
+    * Consider what devices have what kinds of ratios
+    * Consider the relationship between screen size and resolution (PPI)
+* **Brightness**
+    * Strength of backlights determines brightness
+    * Measured in *nits*.
+    * 100 nits on the low end. 1000 nits on the high end.
+    * Average is around 300
+    * One nit is one candela/m<sup>2</sup>.
+* **Viewing Angle**
+    * viewing angle is limited.
+    * screen fades at extreme angles.
+    * TN panels have narrow angle
+    * IPS tech has a huge viewing angle.
+    * Sometimes you *want* a limited viewing angle.
+* **Response Rate**
+    * The amount of time it takes for all sub-pixels to change from one state to another.
+    * This is measured in ms
+    * lower is better
+    * Two ways to measure this:
+        * BtW
+        * GtG
+    * Typical advertised response rate is 5ms
+    * Though this is usually GtG.
+* **Refresh Rate**
+    * How often the screen changes or updates completely
+    * Sort of like clock speed
+    * 60 Hz is fine for most.
+    * Note: Standard motion picture is 24 Hz.
+    * Common higher end refresh speeds are 144, 165, 240
+* **Contrast Ratio**
+    * Some professions hung on to CRTs for a while. Why?
+    * *contrast ratio* is difference between darkest and lightest spots the monitor can display.
+    * good is 450:1
+    * low end is 250:1. High is 1000:1
+    * *dynamic contrast ratio* - marketing hogwash.
+* **Color Depth**
+    * The bit-depth of the panel.
+    * Old TN monitors used 6-bit panel. So, each sub-pixel could do $ 2^6 = 64 $ different color combos.
+    * Today, they use 8-bit or $ 2^8 = 256 $ colors per channel. This is marketed as 24-bit color.
+    * photographers might use 10-bit panels.
+* **Comparing**
