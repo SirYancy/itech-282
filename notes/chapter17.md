@@ -15,7 +15,7 @@ Monitor
 : Also called video display. Shows you what's going on. primary output device for most computing devices.
 
 Display Adapter
-: or Video card handles all communication between CPU and display
+: Or *video card* handles all communication between CPU and display
 
 * OS needs to know how to talk to display adapter and needs appropriate drivers and configuration
 
@@ -162,3 +162,89 @@ Display Adapter
     * Today, they use 8-bit or $ 2^8 = 256 $ colors per channel. This is marketed as 24-bit color.
     * photographers might use 10-bit panels.
 * **Comparing**
+
+## Display Adapters
+
+* Display adapter or video card
+* handles computing and processing information from CPU and sends it to display
+* It is a processor. Thus it needs RAM.
+* Also needs fast connection to CPU and system RAM
+* It must also have a connection compatible with monitor
+* Often an expansion card plugged into mobo
+* Sometimes it's integrated into the mobo. Still called a video card
+* Six things:
+    * display modes
+    * mobo slot
+    * graphics processor circuitry
+    * video memory
+    * integrated GPU
+    * connectors
+
+### Historical/Conceptual
+
+* Modes
+    * In the old days. Video was exclusively text-based
+    * The screen was divided into a grid
+    * Limited to drawing one of 256 characters
+    * These characters were stored in the BIOS
+    * These video cards were simple and cheap.
+    * There were a *few* effects.
+    * Limited to 80 characters per row, 24 rows of chars.
+    * These were the days that RAM was expensive.
+    * You need 80 x 24 = 1920 characters = 15,360 bits or 1920 bytes to fill the screen
+    * This evolved into *graphics video card* which could control every pixel.
+    * Needed more RAM. 320 x 200 pixels = About 8000 bytes. (still monocrhome)
+    * As resolutions increased, the amount of RAM needed increased
+    * Color is the next step
+    * So how many bits do you set aside for colors? How many colors do you want?
+    * Four colors? 2 bits per pixel. 16 colors: 4 bits
+    * No more text-only mode cards. only bits per pixel now.
+    * 256 colors: 8 bits per pixel.
+    * *color depth* is always a power of 2. Why?
+    * As more colors are added: more RAM
+    * See text page 822 (Update this)
+    * Windows and Linux are only able to display a fixed number of resolutions and color depths
+    * These are called Modes
+    * Video Electronics Standards Association (VESA)
+    * All derived from the original: VGA
+
+#### VGA
+
+* IBM introduced *video graphics array* VGA standard
+* 16 colors at 640x480
+* It used an analog signal instead of a digital one
+* This allowed 64 distinct levels for 3 colors (RGB)
+* $ 64^3 $ or 262,144 possible colors.
+* Caveat: Only 16 or 256 colors can be displayed at a time.
+* 640x480 and 16 colors is VGA mode.
+
+#### Beyond
+
+* Many modes, but you don't need to know them all
+
+### Motherboard slot
+
+* Four ways 
+* PCI (older monitors older systems)
+* AGP (still old, but not as old)
+* PCIe (Current video cards)
+* Integrated
+
+#### PCI
+
+* Limited to 132 MBps (32-bit transfers at 33 MHz)
+* How much throughput do you need for even modest graphics?
+* Also consider that systems often have more than one PCI device
+
+#### AGP
+
+* *Accelerated Graphics Port*
+* Single, special port. Dedicated to video
+* No current mobos have them anymore
+* 66 MHz 32-bits
+
+#### PCIe
+
+* replaces PCI and AGP in the end.
+* All video cards PCIx16 connector (all lanes)
+* Remember that PCIe 3.0 is capable for 8 GTps *per lane*.
