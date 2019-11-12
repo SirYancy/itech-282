@@ -162,6 +162,39 @@ Display Adapter
     * Today, they use 8-bit or $ 2^8 = 256 $ colors per channel. This is marketed as 24-bit color.
     * photographers might use 10-bit panels.
 * **Comparing**
+    * Interestingly TN monitors are both the most and least expensive monitors.
+
+## Projectors
+
+* *front-view* projectors
+* Technology
+    * First ones used CRTs.
+    * Each color used a separate CRT.
+    * Had beautiful images, but were expensive, large, heavy.
+    * They have been abandoned.
+    * Given that light shines through an LCD panel. Way cheaper than CRT, but not as good quality.
+    * TI has *Digital Light Processing* (DLT) tech.
+    * It uses mirros and other tricks to project the image. Softer image than LCD, but use more electricity.
+    * Same issues apply: native resolution, etc.
+* Three other issues:
+    * *Lumens* are how bright it is. Optimal lumens are based on size of room and screen. A small, dark room: 1000-1500. Large room might be 10,000+
+    * *Throw* is the size of the image at a certain distance. Projectors have recommended min and max throw distance. Typically expressed in distance to project a 100 in screen. Standard is about 11 to 12 feet. ultra-short-throw projector maybe 15-20 inches. 
+    * *Lamps* generate heat. Thus they have fans that even run after you turn it off. 
+        * lamps are expensive.
+        * Three lamp techs: metal halide, LED, laser.
+        * metal halide was standard for a long time. excessive heat, fan noise, short life span (~3000 hours), expensive
+        * LED use red, green, blue LEDs. Don't heat up, so fans are quieter. Used to cost more, but this is changing. Not as many lumens, so need a darker room. Huge lifespan 20,000+ hours
+        * Lasers are a mixed bag. Some are white lasers hitting color wheels. Others use colored lasers. Vibrant, high-contrast images. Very little heat. Lamps last 30,000+ hours. Currently most expensive, but coming down.
+
+## VR Headsets
+
+* Two high-resolution screens mounted into the headset which blocks outside sensory input.
+* Uncommon so far, but becoming more prevalent.
+* Often requires a very high-end system.
+* Tiny displays use *organic light-emitting diode (OLED)* or active matrix OLED (AMOLED).
+* OLED differs from LCD a bit. The light is emitted by the screen itself. No backlight.
+* This means great contrast.
+*
 
 ## Display Adapters
 
