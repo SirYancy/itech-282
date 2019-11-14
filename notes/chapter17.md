@@ -281,3 +281,140 @@ Display Adapter
 * replaces PCI and AGP in the end.
 * All video cards PCIx16 connector (all lanes)
 * Remember that PCIe 3.0 is capable for 8 GTps *per lane*.
+
+## Common Features
+
+* **Connections**
+    * VGA
+    * DVI
+    * HDMI
+    * DisplayPort
+    * Thunderbolt
+    * HDBaseT
+* VGA
+    * Windows PCs often use 15-pin, three row D-type connector and power plug
+    * Oldest and least capable connection type
+* DVI
+    * *Digital Visual Interface*
+    * DVI is three different connectors that look similar
+    * DVI-D is digital, DVI-A is for analog (backwards compatibility). And DVI-A/D or DVI-I (interchangeable) for either.
+    * A and D are keyed so they won't fit either. I accepts either.
+    * Two varieties
+        * *Single-link DVI* has max bandwidth of 165 MHz. This translates to max res of 1920x1080 at 60Hz or 1280x1024 at 85Hz
+        * *Dual-link DVI* uses more pins to get higher resolutions. up to 2048x1536 at 60Hz.
+* HDMI
+    * Common in LCDs, projectors, and VR headsets (not to mention, TVs, DVD players, video game consoles, etc)
+    * *High definition multimedia interface*.
+    * Carries both video and audio.
+    * Can handle just about any resolution
+    * Small devices might have mini-HDMI. It's just a small form factor. Same capabilities.
+* DisplayPort and Thunderbolt
+    * Some use either DP or TB. Both support full HD and audio
+    * Full sized DP ports are common now and use a full-size DP connector
+    * TB1 and 2 use the same connector as mini-DP.
+    * of course, TB3 uses USB-C connector
+    * Note: Many USB-C connectors do not support Thunderbolt 3.
+    * Look for symbols next to ports.
+* HDBaseT
+    * Some projectors use this.
+    * Long range
+    * Uses Cat 5a or Cat 6
+    * It allows you to connect to a projector in a conference room with runs up to 100 meters.
+    * Fair warning: This is *not* on the exam.
+* Adapters
+    * DVI-to-VGA
+    * DVI-to-HDMI
+    * TB-to-DVI and TB-to-HDMI
+    * Sometimes you have cables with different connectors on either end.
+* Adjustments
+    * With new monitors you can usually make adjustments in an on-device menu.
+    * Try it
+* VESA Mounts brackets are almost always standard these days.
+
+# Back to Display Adapters
+
+### Graphics Processors
+
+* GPU
+* Breakdown of how they are named
+* Many companies make graphics cards, but the chips? Only three
+    * NVIDIA
+    * AMD
+    * Intel
+* Basically NVIDIA and AMD make GPUs and sell them to third parties who make graphics cards
+* GPU is generally the most importance consideration.
+
+### Video Memory
+
+* Book claim: Video memory is the hardest-working set of electronics on the PC
+* Constantly updates to reflect every change on the screen.
+* In some apps, this can be a bottleneck (games)
+    * data throughput, access speed, capacity.
+* These bottlenecks are reduced by upping the width of the bus, using special RAM, and just adding more RAM
+* Main difference between normal DRAM and VRAM is that VRAM can read and write at the same time.
+* High end graphics cards often use GDDR5 or GDDR 5X (or GDDR6)
+* budget graphics cards might just use plain old DDR3
+* Competitor is HBM/HBM2 (not on the exam, but you should be aware of it.) imagine a 1024 bit bus.
+* Common amounts of RAM on a card are 1,2,3,4, etc. Up to 24 GB.
+
+### Integrated GPU
+
+* OFten called onboard video. Has limitations. But is cheap and small (think laptops)
+* AMD and NVIDIA both make integrated GPU
+* Intel has long integrated Graphics Media Accelerator (GMA) into chipsets.
+* AMD has a lot of interesting offerings to this as well (Tegra in the Switch)
+* Uses less electricity!
+
+### Connector types
+
+* See section in text p 765-766
+
+## Installing and Configuring
+
+* Three things to look for:
+    * long cards,
+    * proximity of nearest other cards
+    * power connectors
+
+
+## Lots of stuff here for 1002
+
+## Troubleshooting
+
+* Video cards and drivers
+    * Majority of problems are bad/incompatible drivers or incorrect settings
+    * Incompatible driver usually results in BSoD
+    * If a driver gets corrupted, one of these might happen
+        * go into SVGA mode
+        * blank monitor
+        * lock up
+        * display a garbled screen
+        * incorrect color patterns
+        * distorted image
+    * More for 1002
+    * Book suggests looking for questions that combine system logs (Event Viewer) and display issues as they are often connected.
+    * Heat is an issue. Make sure everything has airflow. Clean out dust, etc
+
+* Troubleshooting Monitors
+    * Ghosting streaking and/or fuzzy edges: check cable connections and cable. most commonly point to video card
+    * One color is missing: check cables for breaks or bent pins. Check front controls. Could be a broken monitor (rare)
+    * Screen is dim, but brightness is up? may require internal adjustment or replacement
+    * Bad pixels. *dead pixels*. Under warranty? Contact manufacturer. Live with them or replace. There are tricks online. Warranties often allow for a certain percentage of dead pixels.
+    * Cracked: not repairable. Replace
+    * flickering image: cheap panel with too much light bleed or dying CCFL. LEDs don't flicker. Exam will say to replace the CCFL. But really you should just get a new one.
+    * Dim image: dying backlight
+    * LCD goes dark, but see image still? Lost backlight or inverter.
+    * Distinct hissing: inverter is about to fail. Replace inverter
+    * image is displayed for a long time. *Persistence*. usually temporary. Should go away if you turn off monitor for a while. Otherwise, it can be permanent *burn-in*. Screen Savers and turning off monitors mitigate
+    * Opening LCD monitors is tricky. Inverters can zap you and you can zap them. Usually better to hire a specialist (probably cheaper too).
+    * Cleaning monitors?
+        * antistatic mointor wipes. Microfiber works great. never use window cleaners or ammonia. Or really any liquid. Commercial cleaners can also melt older LCDs.
+
+* Troubleshooting Projectors
+    * Lamps produce heat. let it cool loff before you work on it.
+    * Relatively short life. Simple to replace, but expensive.
+    * keep spare batteris for the remote
+    * check fans for dust if overheat shutdown occurs (screen goes black)
+    * Sometimes you may have to reboot it
+    * If there are missing colors or strong tints, one of the LCD panels might be bad
+    * If you have a DLP projector, it could be a failing color wheel assembly.
