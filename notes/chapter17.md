@@ -1,8 +1,8 @@
 ---
 layout: default
 title: Chapter 17 - Display Technologies
-nav_order: 8
-permalink: /chapter-10
+nav_order: 9
+permalink: /chapter-17
 mathjax: true
 ---
 
