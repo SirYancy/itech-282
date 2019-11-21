@@ -119,6 +119,34 @@ Networking is a critical component to almost all computing
     * Rated using RG name. You need to know 2
         * RG-59 and RG-6
     * Two connectors: BNC and F-type.
-    *
 
+## Implementing Ethernet
 
+* Common implementations of star bus.
+* Typical LAN
+    * *local area network*
+    * A group of computers close to each other. (almost always)
+    * They can all hear each other
+    * A group connected by switches is called a *broadcast domain*
+    * small office/home office (SOHO)
+    * Most common way to set up is using *Wi-Fi*. (chapter 20)
+    * Another option is *Ethernet over Power*.
+    * Note: a *bridge* is something that connects dissimilar technologies
+    * EoP can be good in weird places where wires cant reach.
+* Structured Cabling
+    * Important to note, that the real object of A+ is to be able to do basic troubleshooting and to communicate with cable installers, not necessarily to run your own cable.
+    * Star networks aren't actually all that star shaped.
+    * You don't really want to put your switch in the middle of the room and run cables to all the computers in the room.
+    * You start with the *telecommunications room*.
+    * Cables run horizontally from there.
+    * Each horizontal cable is a *run*.
+    * In most networks, this run is Cat 5e or better UTP
+    * ANSI/TIA says all horizontal cabling should be solid core
+    * Telecommunications Room
+        * equipment racks are 19 inches wide. 2-3 ft high bolted to a wall, or a floor to ceiling model.
+        * All sorts of equipment. Switches, servers, UPS, etc
+        * All rack-mounted equipment uses high called a *U*. 1.75 inches.
+        * Devices can be some number of U.
+        * *patch panel* is where you connect permanent cables on the back (to avoid moving them a lot)
+        * patch panels use a connector called a 110 block (110-punchdown block)
+        * patch panels have room for labels. (there are standards, but not many people follow them)
