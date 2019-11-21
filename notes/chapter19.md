@@ -50,4 +50,40 @@ Chapter Chapter 19 - Local Area Networking
     * The router's LAN-side IP address is called *default gateway*.
 * **DNS**
     * Talk about DNS and domains.
+* **Entering IP Info**
+    * Every computer that wants to connect to a network must know:
+        * **IP address**
+        * **Subnet Mask**
+        * **Default Gateway**
+        * **DNS server**
+    * You can enter this information statically or dynamically.
+    * YOu can do it manually.
+    * But it's easier to obtain an IP address automatically.
+    * This works if your network uses *DHCP - Dynamic Host Control Protocol*
+    * Most networks do.
+    * When your computer boots, it broadcasts a DHCP request. the DHCP server gives you all the IP info it needs.
+    * You can also manually configure, creating a *static IP address*
+
+## TCP/UDP
+
+* A TCP/IP connection is either connection-oriented or connectionless.
+* Advantages and disadvantages of them.
+* Connection-oriented: TCP
+* Connectionless: UDP
+* *You* don't choose one or the other. The needs of an app dictates which protocol gets used.
+* TCP: Ensure that every bit of data gets there.
+* UDP: Fire and forget
+
+## TCP/IP Services
+
+* TCP/IP is good at routing traffic efficiently. Two computers on different LANs can talk.
+* Traffic is not sent to the router unless the connection is between two different LANs.
+* All of these decisions are made based on destination IP address of packet.
+
+## TCP/IP Settings
+
+* You don't need to know how to derive correct settings, but you do need to know where to enter them. (1002)
+
+## TCP/IP Tools
+
 * 
