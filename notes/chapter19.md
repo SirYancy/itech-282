@@ -50,7 +50,19 @@ Chapter Chapter 19 - Local Area Networking
     * The router's LAN-side IP address is called *default gateway*.
 * **DNS**
     * Talk about DNS and domains.
-
+* **Entering IP Info**
+    * Every computer that wants to connect to a network must know:
+        * **IP address**
+        * **Subnet Mask**
+        * **Default Gateway**
+        * **DNS server**
+    * You can enter this information statically or dynamically.
+    * YOu can do it manually.
+    * But it's easier to obtain an IP address automatically.
+    * This works if your network uses *DHCP - Dynamic Host Control Protocol*
+    * Most networks do.
+    * When your computer boots, it broadcasts a DHCP request. the DHCP server gives you all the IP info it needs.
+    * You can also manually configure, creating a *static IP address*
 ## TCP/UDP
 
 * Connection-oriented vs Connectionless
@@ -147,3 +159,4 @@ Chapter Chapter 19 - Local Area Networking
     * Check the NIC
         * Loopback test
     * Cable testing (RARE)
+
