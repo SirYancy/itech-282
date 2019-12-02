@@ -6,8 +6,8 @@ permalink: /chapter-19
 mathjax: true
 ---
 
-Chapter Chapter 19 - Local Area Networking
-==========================================
+Chapter 19 - Local Area Networking
+==================================
 
 # TCP/IP
 
