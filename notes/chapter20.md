@@ -104,5 +104,30 @@ Chapter 20 - Wireless Networking
     * **802.11g** - Speed of *a*, range of *b*. came out in 2003. Backward compatible with b and g nodes.
     * **802.11n** - Faster speeds, new antenna tech. *mulitple in/mulitple out (MIMO)*. 600 Mbps. *Transmit beamforming* helps get rid of dead spots. Also in 2.4 GHz band, but can support dual-band operation.
     * **802.11ac** - More streams, wider bandwidth, higher speed. Only uses 5 GHz range. Uses *Multiuser MIMO (MU-MIMO)*. 
+    * Look at exam tip on 910
 
-* 
+## Other Wireless Standards
+
+* Infrared Wireless Networking
+    * IrDA is supported by all OSes.
+    * Only ad-hoc.
+    * Only half-duplex
+    * It has its uses. But limited.
+* Bluetooth
+    * Think *personal area network (PAN)*
+    * *not* designed to be a full-function networking solution.
+    * Does not compete with Wi-Fi.
+    * Current gen, bluetooth 5, has better support for IoT (kind of the way things are going).
+    * IEEE 802.15 standard for wireless PANs.
+    * hops frequencies 1600 times a second. Highly resistant to interference.
+    * Have classes that use less power, but have less range.
+* Cellular
+    * discussed primarily in chapter 21
+
+# Troubleshooting
+
+* Boils down to narrowing down the situation
+    * Who is affected?
+    * What is the nature of their network problem?
+    * When did the problem start?
+* Answering these questions is the key and the first step when their are network problems.
