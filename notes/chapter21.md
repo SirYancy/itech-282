@@ -64,4 +64,60 @@ Chapter 21 - The Internet
     * 33.6 smooshes 14 bits into each baud $2400 \times 14 = 33.6 Kbps$
     * Note: Modems use Cat1 cables with RJ-11 connectors
     * There are external (USB) and internal (PCI) modems
-* 
+
+## ISDN
+
+* It's useful to know how phone networks work.
+* YOu have your phone, which connects to a network interface box on your house
+* This is connected to a central switch. There might be many of these central switches in a town
+* These connect to each other via trunk lines
+* Over time, these analog networks and switches were upgraded from analog to digital
+* customers demanded higher bandwidth Internet access.
+* Phone lines were supposed to be capped at 28.8 Kbps (though they did manage to squeeze out 56 Kbps)
+* So how did they get the greater speeds?
+* Make the whole phone system digital.
+* *Integrated Services Digital Network* (ISDN) was born
+* Two types of channels: Bearer (B) and Delta (D)
+* Usually use two B and one D channel for 128 Kbps.
+* Expensive to install.
+* Need to typically be 18,000 ft from central office to have ISDN.
+* Note: *primary rate interface (PRI)* uses twenty-three B channels to get 1.544 Mbps. This is called a T1 line.
+* ISDN wall socket looks like RJ-45
+* ISDN is becoming increasingly rare.
+
+## DSL
+
+* *Digital Subscriber Line*
+* Uses a standard telephone line with special equipment.
+* Creates and always-on internet connection.
+* At the low-end, less than 1Mbps. Up to hundreds of Mbps
+* Requires little setup for a user. Tech comes out and plugs stuff in.
+* You can do it yourself.
+* Need to be fairly close to the central office.
+* Up to about 18,000 ft.
+
+## Cable
+
+* Uses TV cables to serve up speed.
+* Typically faster than DSL
+* Up to 1000 Mbps download speeds
+
+## Fiber
+
+* Lots of things have influenced FTTN and FTTP rollout. (Google Fiber among them)
+* Difference between FTTN and FTTP
+* Up to 1+ Gbps
+
+## Wi-Fi
+
+* Covered in detail in chapter 20
+
+## Line-of-Sight Wireless
+
+* In some remote areas, you can use high-powered directional attenas.
+* Places like ski resorts
+* To get higher speeds, you might use very high frequencies 24-GHz
+
+## Cellular
+
+* Several generations.
