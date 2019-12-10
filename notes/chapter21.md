@@ -121,3 +121,105 @@ Chapter 21 - The Internet
 ## Cellular
 
 * Several generations.
+* 3G cellular is not great. Just under 10 Mbps download speeds
+* We are currently in 4G and moving into 5G
+* 4G incorporates the *Long Term Evolution (LTE)* technology.
+* LTE is considered "true 4G" and has theoretical download speed of 1Gpbs and up speed of 100Mbps.
+* LTE could theoretically replace wired networks. Using *wireless hotspots*.
+    * Why haven't they?
+* In addition to LAN and WAN, there are also WLAN and WWAN.
+* A hotspot is a form of *tethering*.
+* 5G specification calls for speeds of 20 Gbps
+
+## Satellite
+
+* Satellite connections require line of sight to satellite
+* A satellite modem handles translation
+* Coax runs from dish to satellite modem
+* Some offerings feature 25 Mbps down and 3 Mbps up
+* Downsides:
+    * *satellite latency*
+    * *fair access policies*
+
+# Connection to the Internet
+
+* Two options
+    1. Connect a single computer to your Internet connection
+    1. Connect a network of computers to your Internet connection
+* Number 1 is easy, though there are steps that should be taken to be secure
+* Number 2 is a bit more complex. You need a router.
+* Loads of fine routers.
+* Most have 4 ethernet ports and one or more Wi-Fi radios
+* They use a tech called *Network Address Translation (NAT)*.
+    * This presents all of the computers on the network as if they are the same machine.
+    * It hides the entire network from the rest of the Internet.
+    * NAT is a kind of a firewall in a sense.
+
+## Basic Router Config
+
+* Usually accessed via a web interface
+
+* Changing the user name and password
+    * You should always change the username and password of the router.
+    * Usually fairly easy to find in some admin menu
+* Setting Static IP addresses
+    * Typically IP addresses are dynamically assigned via DHCP
+    * But static IP addresses are possible (extra fees)
+* Updating Firmware
+    * Periodically, routers have firmware updates that need to be applied.
+    * Mine needs one right now.
+    * They have the possibility of bricking your router. (rare)
+
+# Internet Application Protocols
+
+* You need specific applications to do certain things on the Internet
+* Each of these has a protocol and ports (what exactly are ports?) which you must know.
+* The only ones you need:
+    * World Wide Web (HTTP and HTTPS)
+    * E-Mail (POP3, IMAP, SMTP)
+    * Telnet
+    * SSH
+    * FTP/SFTP (SFTP is not in the exam objectives)
+    * Remote Desktop Protocol (RDP)
+    * VoIP (SIP) (not actually in exam objectives)
+* Example: HTTPS
+* Application protocols
+
+| Application Protocol | Function                     | Port Number |
+|----------------------+------------------------------+-------------|
+| HTTP                 | Web Pages                    | 80          |
+| HTTPS                | Secure Web Pages             | 443         |
+| FTP                  | File transfer                | 20, 21      |
+| SFTP                 | Secure file transfer         | 22          |
+| IMAP                 | Incoming e-mail              | 143         |
+| POP3                 | incoming e-mail              | 110         |
+| SMTP                 | Outgoing e-mail              | 25          |
+| Telnet               | Terminal Emulation           | 23          |
+| SSH                  | Encrypted terminal emulation | 22          |
+| RDP                  | Remote Desktop               | 3389        |
+| SIP                  | Voice over IP                | 5060        |
+
+* Utility Protocols
+
+| Utility Protocol | Function                                 | Protocol | Port Number   |
+|------------------+------------------------------------------+----------+---------------|
+| DNS              | Allows use of DNS naming                 | UDP      | 53            |
+| DHCP             | Automatic IP Addressing                  | UDP      | 67, 68        |
+| LDAP             | Querying Directories                     | TCP      | 389           |
+| SNMP             | Remote management of network devices     | UDP      | 161, 162      |
+| SMB              | Windows naming/folder sharing; also CIFS | TCP      | 445           |
+|                  |                                          | UDP      | 137, 138, 139 |
+| AFP              | macOS file services                      | TCP      | 548           |
+| SLP              | Services discovery Protocol              | TCP/UDP  | 427           |
+| NetBIOS/NetBT    | NetBIOS over TCP/IP                      | TCP      | 137, 139      |
+|                  |                                          | UDP      | 137, 138      |
+
+# Internet of Things
+
+* Important ones to know:
+    * Thermostat
+    * Light switches
+    * Security Cameras
+    * Door Locks
+    * Digital Assistants
+* 
