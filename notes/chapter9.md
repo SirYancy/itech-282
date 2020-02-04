@@ -86,5 +86,24 @@ Chapter 9 - Implementing Mass Storage
 * Windows
     * FAT32
         * Fragmentation
-    * 
-*
+    * NTFS
+
+# Partitioning, Formatting, and Pooling
+
+* bootable media
+    * Boot device, boot disc
+    * Install media for an OS
+    * `.iso` files
+* Partitioning and formatting with install media
+    * Installing windows
+    * There is a lab in ucertify to go through this process
+* Disk management
+    * Go through options for disk management
+
+# Maintaining and Troubleshooting
+
+* Maintenance
+    * Error Checking
+    * chkdsk, fsck, error checking, etc
+    * Defragmentation
+    * Disk cleanup
