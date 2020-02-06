@@ -88,4 +88,3 @@ Chapter 23 - Portable Computing
 * Overheating
 * Audio
 * Input
-*
