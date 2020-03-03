@@ -1,8 +1,8 @@
 ---
 layout: default
 title: Chapter 13 - Users, Groups, and Permissions
-nav_order: 12
-permalink: /chapter-12
+nav_order: 13
+permalink: /chapter-13
 mathjax: true
 ---
 
