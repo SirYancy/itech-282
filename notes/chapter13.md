@@ -97,3 +97,80 @@ A combination of user accounts, groups, and NTFS permissions facilitate a robust
 
 * What happens when files are moved in different situations?
 * Look at these carefully in the text. (p 549)
+
+# Linux and MacOS
+
+* Example clone this repo: `ls -l`
+* look at the part that's `rwxrwxrwx`. These permissions are for:
+    * **Owner**
+    * **Group**
+    * **Everyone**
+* RWX stand for:
+    * **Read**
+    * **Write**
+    * **Execute**
+* Commands to look at:
+    * `chown`
+        * This changes the owner and the group for a file
+        * `chown <new owner> filename`
+        * `chown <owner>:<group> filename`
+        * This does need superuser privileges (`sudo` or `su`)
+    * `chmod`
+        * This changes permissions. Unfortunately, it's kind of hard to use.
+        * r: 4, w: 2, x: 1
+        * So what would the permissions number be for `-rw-rw-r--`?
+        * It does mean that you can make the permissions whatever you want, by simply using the three numbers
+        * To restrict access to a file?
+        * To give everyone all access?
+
+# Sharing Resources
+
+* So you have all of these private files. But maybe some of them you want to share?
+* You have a media server, say.
+* You want every user to have access to a shared collection of media.
+* In Windows 7, there is a public folder that is accessible to everyone.
+* In Windows 8+, it's still there, but it's not visible by default.
+* So how do we share *non-library* folders?
+
+## Sharing folders and files
+
+* NTFS permissions.
+* Right-click -> properties -> security
+* Here, you can add users and groups to a file's permissions
+* You have granular control over which users/groups get which permissions
+* There's also the *sharing wizard*. Right click and hit `share`.
+* In Windows 10, this is a bit weird, because sharing on a single machine and sharing on a network are kind of the same thing.
+* Demo?
+
+## Locating shared folders
+
+* It's a good idea to check a computer for shared folders.
+* Since shared folders are not always easy to spot, there is a method for doing this.
+* `Computer Management Console` in `Administrative Tools`.
+* Demo
+
+## Administrative Shares
+
+* These are automatically generated shares that allows administrators to remotely access important system files.
+* Remember to exercise proper security protocols.
+
+## Encryption
+
+* This enables you to secure files even from admins
+* There are three possible encryption tools.
+    * On Windows Home, there are zero.
+    * Encrypting File System
+    * BitLocker
+
+### Encrypting File System
+
+* *EFS* lets you encrypt individual files and folders
+* Click a file, properties, advanced, and encrypt.
+* This is slightly dangerous for reasons explained in the text.
+* It's tied to *this* user on *this* windows install.
+* Also, copying to different volumes is complicated.
+
+### BitLocker
+
+* This allows you to encrypt the entire damned file system.
+* It has some complexity to it, and some best practices should be observed to maintain security.
